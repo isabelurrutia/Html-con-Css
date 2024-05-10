@@ -1,0 +1,131 @@
+<!DOCTYPE html><!--nos indica que estamos usando html 5-->
+<html lang="es">  <!--idioma-->
+<head>
+    <meta charset="UTF-8"> <!--tipo de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--como vemos el html en el navegador-->
+    <title>Intro al HTML</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--del inglés heading: encabezados: van del 1 al 6-->
+    <h1>Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4 class="rojo subrayado">Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6 class="rojo morado">Encabezado 6</h6>
+
+    <!--párrafos-->
+    <p id="letra_verde" class="rojo">Este es el primer párrafo de mi página</p>
+
+    <!--Alt + z permite envolver en campo visual el código se llama WORD WRAP (en view) -->
+    <p id="parrafo_especial">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque maiores, suscipit corrupti tenetur quis possimus alias nobis aliquam minus deleniti, ex autem quia provident ullam incidunt, exercitationem eius vero?</p>
+
+    <p><strong>parrafo en negrita</strong></p>
+
+    <div class="container">
+        <p>hola 1</p>
+        <div>
+            <p>hola 2</p>
+        </div>
+        <p>hola 3</p>
+    </div>
+
+    <!--anchor:ancla es un hipervínculo target nos indicará donde se abrira la pantalla valor _blank, será en otra pestaña-->
+    <a href="http://www.google.cl" target="_blank">Ir a Google</a>
+
+    <!--Unordered list: Lista desordenada-->
+    <h2>Lista Desordenada</h2>
+    <ul>
+        <li>Gatos</li>
+        <li>Perros</li>
+        <li>Pájaros</li>
+        <li>Mapache</li>
+        <li>Venado</li>
+    </ul>
+
+    <!--Ordered list: Lista ordenada-->
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Entrar a la sesión zoom</li>
+        <li>Poner mucha atención en clases</li>
+        <li>Realizar actividades core</li>
+    </ol>
+    
+    <h2>Tabla</h2>
+    <table>
+        <!--encabezado de la tabla-->
+        <thead>
+            <!--table row o fila-->
+            <tr>
+            <!--table heading: título en negrita-->
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th> 
+            </tr>
+            <tr>
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td> 
+            </tr>
+            <tr>
+                <td>Columna 2.1</td>
+                <td>Columna 2.2</td>
+                <td>Columna 2.3</td> 
+            </tr>
+        </thead>
+    </table>
+
+    <img src="./img/flores.png" alt="Hermosas flores">
+
+<!--Permite crear formulario-->
+    <form action="#">POST <!--el action es donde quiero que se envíe la url, ponemos # por que no queremos enviar a ningún lado, solo me quedo aquí-->
+        <div><!--caja contenedor-->
+            <label>Llena estos campos:</label>
+            <input type="text" name="input_texto">
+            <input type="number" name="input_numeral">
+            <input type="password" name="contra">
+            <input type="date" name="fecha">
+            <input type="email" name="correo"> <!--puede parecer igual al texto, pero NO al enviar verifica formato correo electrónico-->
+        </div>
+        <div>
+            <label for="casado_id">Casado</label> <!--for permite indicar para quien es el label, enlasa con su identificador-->
+            <input type="radio" id="casado_id" value="casado" name="estado_civil">
+            <br><!--se utiliza como salto de línea, no usar como espacio entre divs-->
+            <label for="soltero_id">Soltero</label>
+            <input type="radio" id="soltero_id" value="soltero" name="estado_civil">
+            <!--como ambos input tienen igual name uno se descarta cuando el otro se selecciona-->
+        </div>
+        <div>
+            <input type="checkbox" name="mayor_edad" id="mayor">
+            <label for="mayor">¿Es mayor de edad?</label>
+        </div>
+        <div>
+            <select name="lenguaje">
+                <option value="py">Python</option>
+                <option value="j">Java</option>
+                <option value="c">C#</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="Comentario" cols="100" rows="5"></textarea> <!--cols es el ancho en columnas y los rows filas, medidas en espacios de letras-->
+        </div>
+        <div>
+            <input type="submit" value="Guardar Info">
+        </div>
+    </form>
+    
+    <h3 id="color">Prueba de Color</h3>
+    
+    <div class="tamano"></div>
+
+    <p class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae molestias, sed, facere optio at consequatur error aliquam eius nihil cupiditate numquam delectus expedita tempora, sapiente aperiam minus ut. Accusantium.
+    </p>
+    <div class="fondo"></div>
+    <div id="modelo_caja">
+        Modelo de --caja
+        
+    </div>
+</body>
+</html>

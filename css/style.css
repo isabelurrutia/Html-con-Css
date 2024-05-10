@@ -1,0 +1,120 @@
+/* CSS - Cascade Style Sheets*/ 
+
+/*SELECTORES BÁSICOS
+    
+POR ETIQUETA
+        etiqueta{
+            propiedad:valor;
+        } 
+
+POR CLASE
+        .clase{
+            propiedad:valor;
+        }
+
+POR ID
+        #id{
+                propiedad:valor;
+        }
+*/
+
+h2 {
+    color: blue;
+    font-size: 40px;
+}
+
+.rojo{
+    color: red;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+#parrafo_especial{
+    border: 2px solid purple;
+    font-line: 16px;
+}
+
+#letra_verde{
+    color: green;
+}
+
+.morado{
+    color:purple;
+}
+/*jerarquía: ID, CLASS, ETIQUETAS
+si tienen igual jerarquía, toma el de más abajo*/
+
+p strong{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*para seleccionar solo descendientes directos, es decir solo hijos se aplica, se usa >*/
+container > p{
+    border: 1px dashed red;
+}
+
+input[type="text"]{
+    width: 350px;
+}
+
+input[type="number"]{
+    height: 100px;
+}
+
+input, textarea{
+    border: 3px solid magenta;
+}
+#color{
+/*podemos poner colores desde estas 3 maneras o haciendo clic en la cajita visual studio me muestra el arcoiris de colores*/
+    color: magenta;
+    color: #ABABCE;
+    color: rgb(111,192,243);
+    background-color: yellow;
+}
+
+/*tamaño*/
+.tamano{
+    background-color: gray;
+    width: 400px; /*ancho 50% o 100%  me estoy refiriendo al % del tamaño total de la pantalla y sería responsivo*/
+    height: 50px; /*alto*/
+}
+
+/*ALINEACIÓN*/
+.texto{
+    text-align: center; /*left center rigth justify*/
+    text-decoration: underline;/*underline, line-through, none, */
+    font-style: italic;
+    font-weight: bold; /*bold, negrita, ligth , 100, 300, 900*/
+    font-family: sans-serif;
+}
+
+/*BACKGROUND*/
+.fondo{
+    width: 400px;
+    height: 600px;
+    border:1px solid black;
+    background-color: aqua;
+    background-image: url(../img/flores.webp);
+    background-repeat: no-repeat; 
+    background-size: cover; /*cover: estirar vertical contain:estirar horizontal*/
+}
+#modelo_caja{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+/*MARGIN espacio exterior a la caja*/
+    margin: 20px; 
+    margin-top: 100px; /*margin-top, -right,-bottom, -left*/
+    margin 50px 15px; /*ArribaAbajo IzqDer*/
+    margin 50px 10px 100px 200px ; /*como las manecillas del reloj arriba derecha abajo izquierda */
+
+/*PADDING espacio interior de margen, por dentro, por sobre mi caja */    
+    padding: 20px; 
+    padding: 100px 5px;
+/*BORDE, indica tamaño tipo y color*/
+    border:2px solid black;
+/*solid dotted dashed double*/
+}
