@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    border: 3px solid black;
+    height: 1500px;
+}
+.element{
+    background-color: gray;
+    padding: 10px;
+}
+.main-element{
+    background-color: rgb(208, 224, 33);
+    padding: 10px;
+    /*position: static; esto tenemos por defecto y significa que no se mueve*/
+    /*position: relative;/*permite utilizar propiedades: top, left, bottom, right para moverse*/
+    /*position: absolute;/*se mueve en base al contenedor padre (relative) e ignora al resto de los elementos*/
+    /*position: fixed; /*no se afecta por los otros elementos, se fija en un lugar, cuando se hace scroll el aun permanece en un mismo lugar*/
+    /*position: sticky; se pega al hacer un scroll y en su posicion original*/
+    /*fixed se sobrepone a los otros elementos, queda fijo, los demás elementos no saben que el existe.  sticky se pega en un momento y ahí queda*/
+    z-index: 3; /*permite poner en capas los elementos unos delante de otros, funciona en todas las posiciones no estaticas puedo poner un elemento en 1 otro en 2 otro en 3 mientras mas alto el numero mas adelante */
+    top: 20px;
+    left: 15px;
+    
+}   
