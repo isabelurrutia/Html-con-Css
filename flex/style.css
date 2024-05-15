@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section, div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.container1{
+    background-color: red;
+    width: 1200px;
+    height: 200px;
+    display:flex;
+    /*flex se coloca al padre*/
+    /*acomodo vertical*/
+    align-items: stretch; /*stretch estira los elementos, center, flex-start, flex-end*/
+    /*acomodo horizontal*/
+    justify-content: flex-start;/*por defecto flex-start, flex-end, center, space-around, space-between, space-evenly*/
+    flex-direction: row; /*colum, row, row-reverse, colum-reverse*/
+    /*si se llena la fila pone los elementos abajo*/
+    flex-wrap: wrap;
+}
+.container1 section{
+    background-color: yellow;
+    width: 200px;
+}
+.container2{
+    background-color: blueviolet;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+.container2 section{
+    background-color: beige;
+    flex: 1;
+}
+.container2 .section2{
+    flex: 2;
+}
+.container2 .section3{
+    flex: 3;
+}
+/*
+section1=1
+section2=2
+section3=3
+TOTAL=6
+cada seccion tendría un tercio del tamaño total del contenedor padre.
+*/
