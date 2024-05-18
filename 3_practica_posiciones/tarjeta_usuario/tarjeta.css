@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.card{
+    width: 500px;
+    margin:0 auto;
+    border: 2px solid rgb(209, 206, 206);
+    border-radius: 15px;
+    overflow: hidden; /*escondo todo aquello que sobrepase el limite establecido*/
+}
+.card-header {  
+    height: 80px;
+    background-color: #00bcd4;
+    /*border-top-left-radius: 15px;
+    border-top-left-radius: 15px; borramos esto por que pusimos overflow a card*/ ;
+}
+.card-header img{
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    border: 2px solid white;
+    box-shadow: 3px 2px 22px -10px rgba(117,113,117,1);
+}
+.card-body{
+    margin-top: 75px;
+    padding: 20px;
+    font-family: "Karla", sans-serif;
+}
+.card-body h2{
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: 200;
+}
+.card-body h3, p{
+    margin-bottom: 15px;
+    font-weight: 200;
+    }
+.card-body p{
+    text-align: justify;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
