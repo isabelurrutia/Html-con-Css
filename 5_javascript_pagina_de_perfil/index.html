@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41e12b085a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1 onclick="alerta()">Perfil</h1>
+            </div>
+            <ul class="nav_interior">
+                <li onclick="cambiar_texto(this)">Inicio</li>
+                <li onclick="cambiar_texto(this)">Mi perfil</li>
+                <li onclick="cambiar_texto(this)">Encontrar conexiones</li>
+                <li><button class="boton_cerrar" onclick="eliminar(this)"><strong>Cerrar Sesión</strong></button></li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="main_izquierda">
+                <section class="section_card">
+                    <div class="card-header">
+                        <img src="./assets/img/isabel.jpeg" alt="foto de Isabel Urrutia" 
+                        onmouseover="cambia_imagen(this)" 
+                        onmouseout="regresa_imagen(this)">
+                    </div>
+                    <div class="card-body-1">
+                        <h1 id="nombre">Isabel Urrutia Avendaño</h1>
+                        <h2 class="lugar bonito">Santiago, Chile</h2> <!--siempre se escribe una sola vez class, pero se puedenaplicar diverentes clases separadas por espacios-->
+                        <h3>Profesora | Magister | Estudiante de Programación FullStack | Feliz madre y esposa</h3>
+                        <p>Soy una feliz madre de dos niños y enamorada esposa. En lo profesional adoro enseñar, me gusta mucho la gestión y el apredizaje constante. Estoy estudiando para tener un nuevo trabajo  que sea más compatible, en horario, con mi vida familiar,pero un constante desafio intelectual.</p>
+                        <button onclick="editar_perfil()">
+                            <strong> <i class="fa-solid fa-gear"></i> Editar Perfil</strong>
+                        </button>
+                    </div>
+                </section>
+                <section class="section_education">
+                    <div class="card-body-2">
+                        <h1>Educación</h1>
+                        <h2>Profesora de matemáticas e Informática Educativa <br>Magister en Educación con mención en Informática Educativa <br>Estudiante Programación: Full-Stack Phyton (CDojo) y Full-Stack Java Script (DLatam)</h2>
+                    </div>
+                </section>               
+            </div>
+            <div class="main_derecha">               
+                <section class="section_solicitudes">
+                    <h1>Solicitudes de Conexiones (2)</h1>
+                    <div class="solicitudes-conexiones">
+                    <ul class="solicitudes">
+                        <li><img class="img-solicitudes" src="./assets/img/alberto.jpg" alt="Foto de Alberto Molina"></li>
+                        <li>Alberto Molina</li>
+                        <li><img class="img-solicitudes-2" src="./assets/img/bien.png" alt="signo de correcto"></li>
+                        <li><img class="img-solicitudes-2" src="./assets/img/mal.png" alt="signo de malo"></li>
+                    </ul>
+                    <ul class="solicitudes">
+                        <li><img class="img-solicitudes" src="./assets/img/juanita.jpg" alt="Foto de Juana Dominguez"></li>
+                        <li>Juana Dominguez</li>
+                        <li><img class="img-solicitudes-2" src="./assets/img/bien.png" alt="signo de correcto"></li>
+                        <li><img class="img-solicitudes-2" src="./assets/img/mal.png" alt="signo de malo"></li>
+                    </ul>
+                    </div>
+                </section>
+                <section class="section_conexiones">
+                    <h1>Tus Conexiones (500+)</h1>
+                    <ul class="conexiones">
+                        <li><img class="img-conexiones" src="./assets/img/gonzalo.jpg" alt="foto de Gonzalo Varas"></li>
+                        <li>Gonzalo Varas</li>
+                    </ul>
+                    <ul class="conexiones">
+                        <li><img class="img-conexiones" src="./assets/img/ignacio.jpg" alt="foto de Ignacio Alvarado"></li>
+                        <li>Ignacio Alvarado</li>
+                    </ul>
+                    <ul class="conexiones">
+                        <li><img class="img-conexiones" src="./assets/img/juanpablo.jpg" alt="foto de Juan Pablo Zamora"></li>
+                        <li>Juan Pablo Zamora</li>
+                    </ul>
+                    <ul class="conexiones">
+                        <li><img class="img-conexiones" src="./assets/img/magdalena.jpg" alt="foto de Magdalena Lira"></li>
+                        <li>Magdalena Lira</li>
+                    </ul>
+                    <ul class="conexiones">
+                        <li><img class="img-conexiones" src="./assets/img/maria.jpg" alt="foto de María Cofré"></li>
+                        <li>María Cofré</li>
+                    </ul>
+                    <ul class="conexiones">
+                        <li><img class="img-conexiones" src="./assets/img/mariajose.jpg" alt="foto de María José Tobar"></li>
+                        <li onclick="eliminar(this)">María José Tobar</li>
+                    </ul>
+                </section>              
+            </div>
+        </main>
+    </div>
+        <button onclick="cambiar_mode()">Cambiar Modalidad</button>
+    <script src="./js/script.js"></script>
+</body>
+</html>
